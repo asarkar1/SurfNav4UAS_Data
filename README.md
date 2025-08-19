@@ -15,15 +15,33 @@
 
 
 
-* LiDAR:
+* LiDAR: .pc5 file. It contains:
+* 
+
+
+* Novatel
 
 
 ## Intrinsic 
 
-
 ## Extrinsic/ transformation
 
+# Support code
 
-## Read Parquet files
+## Read LiDAR file
+
+* point cloud
+* IR image
+* timestamp
+* index file from LiDAR
+
+
+## Read Parquet file
+
+* Read file
+* Convert to .csv
+
+
+## read mcap file
 
 
