@@ -3,8 +3,19 @@
 
 ## Description of the sensor suite
 
-Cameras:
-LiDAR:
+### Cameras:
+
+* Forward -
+* Forward-zoom
+* Left
+* Right
+
+  
+  
+
+
+
+* LiDAR:
 
 
 ## Intrinsic 
@@ -13,4 +24,6 @@ LiDAR:
 ## Extrinsic/ transformation
 
 
-##
+## Read Parquet files
+
+
