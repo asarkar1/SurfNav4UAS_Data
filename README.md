@@ -59,11 +59,50 @@ Camera Intrinsic
 * index file from LiDAR
 
 
-## Read Parquet file
+## Converting Parquet Files to CSV
 
-* Read file
-* Convert to .csv
+We provide the `convert_parquet.py` script for converting Parquet files into CSV format.  
+The script supports two modes:
 
+1. **Convert the entire Parquet file** — all columns will be exported to CSV.  
+2. **Convert only selected columns** — only the specified columns will be exported.
+
+---
+### 1. Convert the whole Parquet file to CSV
+
+```bash
+python convert_parquet.py --parquet_path /path/to/input.parquet --out_csv /path/to/output.csv
+```
+Example:
+```bash
+python convert_parquet.py --parquet_path data/sample.parquet --out_csv data/sample.csv
+```
+This will export **all columns** from `sample.parquet` into `sample.csv`.
+
+### 2. Convert only selected columns to CSV
+
+```bash
+python convert_parquet.py --parquet_path /path/to/input.parquet --out_csv /path/to/output.csv --selected_cols col1 col2 col3
+```
+
+Example:
+```bash
+python convert_parquet.py --parquet_path data/sample.parquet --out_csv data/sample_subset.csv --selected_cols buffer_number timestamp
+```
+This will export only the columns `buffer_number` and `timestamp` into `sample_subset.csv`.
+
+### Argument Details
+- **`parquet_path`** *(positional)* — Path to the input Parquet file to be converted.  
+- **`out_csv`** *(positional)* — Path to the output CSV file to be created.  
+- **`--selected_cols`** *(optional)* — Space-separated list of column names to export.  
+  - If omitted, **all columns** in the Parquet file are exported.  
+  - Column order in the CSV will match the order provided here.
+
+---
+
+### Additional Notes
+- If a column name in `--selected_cols` is not found in the Parquet file, it will be skipped and a warning will be printed.
+---
 
 ## read mcap file
 
