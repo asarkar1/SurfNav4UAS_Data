@@ -104,6 +104,15 @@ This will export only the columns `buffer_number` and `timestamp` into `sample_s
 - If a column name in `--selected_cols` is not found in the Parquet file, it will be skipped and a warning will be printed.
 ---
 
+### Requirements
+Make sure the following Python packages are installed before running the script:
+
+```bash
+pip install pyarrow
+```
+The script also uses Python's built-in `json` and `argparse` modules, which do not require installation.
+
+---
 ## read mcap file
 
 
