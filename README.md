@@ -55,9 +55,14 @@ Camera Intrinsic
 
 * point cloud
 * IR image
-* timestamp
-* index file from LiDAR
-
+* Timestamp
+```bash
+python extract_ts_lidar.py --pc5_path /path/to/input.pc5 --export_ts /path/to/output_timestamps.csv
+``` 
+* Confirm a Single Frame (Points)
+```bash
+python extract_ts_lidar.py --pc5_path /path/to/input.pc5 --frame_number <frame_index>
+```
 
 ## Converting Parquet Files to CSV
 
