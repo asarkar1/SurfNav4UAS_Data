@@ -18,7 +18,6 @@ def stringify_nested(arr: pa.ChunkedArray) -> pa.ChunkedArray:
             py_vals = [None if v is None else v.as_py() for v in chunk]
             return pa.array([None if v is None else json.dumps(v) for v in py_vals], type=pa.string())
         return pa.chunked_array([to_json_chunk(c) for c in arr.chunks], type=pa.string())
-    # Cast some tricky scalars to strings for CSV safety
     if pa.types.is_binary(t) or pa.types.is_large_binary(t) or pa.types.is_decimal(t):
         return pa.compute.cast(arr, pa.string())
     return arr
