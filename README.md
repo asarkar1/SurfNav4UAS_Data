@@ -92,8 +92,8 @@ python convert_parquet.py --parquet_path data/sample.parquet --out_csv data/samp
 This will export only the columns `buffer_number` and `timestamp` into `sample_subset.csv`.
 
 ### Argument Details
-- **`parquet_path`** *(positional)* — Path to the input Parquet file to be converted.  
-- **`out_csv`** *(positional)* — Path to the output CSV file to be created.  
+- **`--parquet_path`** *(positional)* — Path to the input Parquet file to be converted.  
+- **`--out_csv`** *(positional)* — Path to the output CSV file to be created.  
 - **`--selected_cols`** *(optional)* — Space-separated list of column names to export.  
   - If omitted, **all columns** in the Parquet file are exported.  
   - Column order in the CSV will match the order provided here.
