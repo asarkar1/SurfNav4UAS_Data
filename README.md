@@ -113,7 +113,7 @@ This will export only the columns `buffer_number` and `timestamp` into `sample_s
 Make sure the following Python packages are installed before running the script:
 
 ```bash
-pip install pyarrow
+pip install pyarrow h5py numpy torch pandas
 ```
 The script also uses Python's built-in `json` and `argparse` modules, which do not require installation.
 
