@@ -7,13 +7,10 @@
 
 The system has four cameras. Each cameras have ressolution of and frame rate of 60 fps. It covers 180 degree field of view. 
 
-* Forward - 
+* Forward
 * Forward-zoom
 * Left
-* Right
-
-Camera Intrinsic
-  
+* Right  
 
 
 
