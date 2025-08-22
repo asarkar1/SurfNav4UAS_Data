@@ -1,0 +1,21 @@
+camera_name: 'right'
+camera_barcode: ''
+image_width: 2448
+image_height: 1376
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [1612.22604, 0.0, 1225.16697, 0.0, 1617.92135, 689.268509, 0.0, 0.0, 1.0]
+distortion_model: rational_polynomial
+distortion_coefficients:
+  rows: 1
+  cols: 8
+  data: [-2.12482204, 1.4165169, -6.24035994e-05, 2.38752591e-05, 1.33269069, -1.8882444, 0.798189905, 1.97520607]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [1612.22604, 0.0, 1225.16697, 0.0, 0.0, 1617.92135, 689.268509, 0.0, 0.0, 0.0, 1.0, 0.0]

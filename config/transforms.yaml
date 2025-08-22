@@ -1,0 +1,16 @@
+transforms: [
+  [0.0, 0.0, -0.375, 0.0, 0.0, 0.0, 'base_link', 'base_link_ground', 0],
+  [1.912001, 0.0, 1.871001, 0.0, 0.0, 0.0, 'base_link_ground', 'lidar', 0],
+  [0.045, 0.0, 0.063, 0.0, 0.0, 0.0, 'lidar', 'camera_forward', 0],
+  [0.0, 0.0, 0.0, -1.570796, 0.0, -1.570796, 'camera_forward', 'camera_forward_optical', 0],
+  [-0.01, 0.119, 0.063, 0.0, 0.0, 0.831649, 'lidar', 'camera_left', 0],
+  [0.0, 0.0, 0.0, -1.570796, 0.0, -1.570796, 'camera_left', 'camera_left_optical', 0],
+  [-0.01, -0.119, 0.063, 0.0, 0.0, -0.831649, 'lidar', 'camera_right', 0],
+  [0.0, 0.0, 0.0, -1.570796, 0.0, -1.570796, 'camera_right', 'camera_right_optical', 0],
+  [0.045, 0.0, 0.133, 0.0, 0.0, 0.0, 'lidar', 'camera_forward_zoom', 0],
+  [0.0, 0.0, 0.0, -1.570796, 0.0, -1.570796, 'camera_forward_zoom', 'camera_forward_zoom_optical', 0],
+  [-0.315, 0.0, 1.890001, 0.0, 0.0, 0.0, 'base_link_ground', 'gps_antenna_1', 0],
+  [0.835, 0.0, 1.890001, 0.0, 0.0, 0.0, 'base_link_ground', 'gps_antenna_2', 0],
+  [-0.04, 0.0, 0.82, 0.0, 0.0, 0.0, 'base_link_ground', 'gps', 0],
+  [-0.04, 0.0, 0.82, 0.0, 0.0, 0.0, 'base_link_ground', 'imu_link', 0]
+]

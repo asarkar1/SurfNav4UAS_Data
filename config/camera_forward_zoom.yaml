@@ -1,0 +1,21 @@
+camera_name: 'forward_zoom'
+camera_barcode: ''
+image_width: 2448
+image_height: 1376
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [3047.47489, 0.0, 1231.59284, 0.0, 3057.95132, 700.729854, 0.0, 0.0, 1.0]
+distortion_model: rational_polynomial
+distortion_coefficients:
+  rows: 1
+  cols: 8
+  data: [-14.2343125, 58.0282022, -0.000680482051, -0.000777523008, 13.9035056, -13.8284745, 52.1582214, 38.779343]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [3047.47489, 0.0, 1231.59284, 0.0, 0.0, 3057.95132, 700.729854, 0.0, 0.0, 0.0, 1.0, 0.0]
