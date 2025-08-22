@@ -109,7 +109,7 @@ This will export only the columns `buffer_number` and `timestamp` into `sample_s
 - If a column name in `--selected_cols` is not found in the Parquet file, it will be skipped and a warning will be printed.
 ---
 ### General note on variable usage for parquet files
-- For all the parquet files, please use the `timestamp` variable to deal with the timestamp. To get the frame numbers, please use `buffer_number`.
+- For all the parquet files, please use the `timestamp` variable to deal with the timestamp. To get the frame numbers, please use `buffer_number`. The four cameras are Genlocked. However, they start at different time within a seccond.  the `buffer_number` and the `timestamp`  fields helps to sync the frames. 
 ---
 ### Requirements
 Make sure the following Python packages are installed before running the script:
