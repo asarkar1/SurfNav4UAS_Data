@@ -48,7 +48,7 @@ The system has four cameras. Each cameras have ressolution of and frame rate of 
 
 # Support code
 
-## Read LiDAR file
+## Read LiDAR (.pc5) file
 
 * point cloud
 * IR image
