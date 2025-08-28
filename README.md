@@ -54,9 +54,26 @@ The extrinsics for the cameras can be found under `geometry_msgs_TransformStampe
 ## Read LiDAR (.pc5) file
 
 * Point Cloud
-```bash
-
-```
+  * Export a single frame
+    ```bash
+    python3 pc5_converter.py \
+          --pc5_path sample_data/example.pc5 \
+          --frame 0 \
+          --to_pcd
+    ```
+  * Export complete folder to all avalable formats (csv, pcd, .bin \[nuscenes and kitti-based\] )
+    ```bash
+      python3 pc5_converter.py \
+        --pc5_path sample_data/example.pc5 \
+        --out_dir output_full_run
+    ```
+  * Export all frames to required format(s) you may use the --formats option to group the options up as well
+    ```bash
+    python3 pc5_converter.py \
+        --pc5_path sample_data/example.pc5 \
+        --out_dir csv_exports \
+        --to_csv <and / or --to_pcd ...>
+    ```
 * IR image
 * Timestamp
 ```bash
